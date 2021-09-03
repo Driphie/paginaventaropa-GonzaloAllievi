@@ -14,23 +14,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navHeader">
-        <label class="navHeader__logoNav"><a href="index.html">Progettare</a></label>   
-      <ul class="navHeader__navHeaderText">
-        <li class="navHeader__navHeaderText__nav1"><a href="index.html">Inicio</a></li>
-        <li class="navHeader__navHeaderText__nav2">
-            <a href="productos.html">Productos</a>
-                <ul class="navHeader__navHeaderText__nav2__submenu">
-                    <li><a href="productos.html">Ultimos Talles</a></li>
-                    <li><a href="ofertas.html">En oferta</a></li>
-                </ul>   
-        </li>
-        <li class="navHeader__navHeaderText__nav1"><a href="ofertas.html">Ofertas</a></li>
-        <li class="navHeader__navHeaderText__nav1"><a href="locales.html">Locales</a></li>
-        <li class="navHeader__navHeaderText__nav1"><a href="contacto.html">Contactanos</a></li>
-      </ul>
-    </nav>     
 <header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: black;">
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand" href="#">Progettare</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" aria-current="page" href="locales.html">Locales</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="contacto.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      
 	<div class="container">
 		<div class="container__contact-box">
 			<div class="container__contact-box__right">
@@ -96,6 +107,8 @@
 <div class="copyright">
     <p>copyright &copy;2021 Progettare. designed by <span>Gonzalo allievi</span></p>
 </div>
-<script src="https://kit.fontawesome.com/7f95fe0727.js" crossorigin="anonymous"></script>       
+<script src="https://kit.fontawesome.com/7f95fe0727.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>        
 </body>
 </html>

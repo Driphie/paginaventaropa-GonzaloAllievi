@@ -16,7 +16,6 @@ $gris: rgb(189, 189, 189);
 $beige: rgb(218, 203, 179);
 $blanco: rgb(255, 255, 255);
 /*--------------------------------*/
-
 body{
     font-family: 'Roboto Mono', monospace;
     font-style: normal;
@@ -80,83 +79,12 @@ body{
 }
 
 /*-------------------NAV-------------------------*/
-.navHeader{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: black;
-    height: 50px;
-    width: $widthh *2;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    z-index: 2;
-    .navHeader__logoNav{
-        color: white;
-        padding-top: 3px;
-        font-family: 'Abril Fatface', cursive;
-        font-size: 30px;
-    }
-    .navHeader__logoNav a{
-        color: white;
-        text-decoration: none;
-    }
-    .navHeader__navHeaderText{
-        position: -webkit-sticky;
-        position: sticky;
-        right: 100px;
-        list-style-type: none;
-        text-transform: row;
-        padding-top: 5px;
-        .navHeader__navHeaderText__nav1{
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0px;
-            display: inline;
-            margin: 0 40px;
-            padding-bottom: 25px;
-            padding-top: 10px;
-            padding: 10px;
-        }
-        .navHeader__navHeaderText__nav2{
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0px;
-            display: inline;
-            margin: 0 40px;
-            padding-top: 10px;
-            padding-bottom: 15px;
-            .navHeader__navHeaderText__nav2__submenu{
-                background-color: black;
-                list-style-type: circle;
-                display: none;
-                position: absolute;
-                margin: 0 40px;
-                padding-bottom: 4px;
-                padding-left: 20px;
-                margin-left: 205px;
-                width: 100px ;
-            }
-            .navHeader__navHeaderText__nav2__submenu li{
-                color: white;
-            }
-            .navHeader__navHeaderText__nav2:hover .navHeader__navHeaderText__nav2__submenu{
-                display: block;
-                background-color: black;
-            }
-        }
-    }
-    .navHeader__navHeaderText a:hover{
-        color: cornflowerblue;
-    }
-    .navHeader__navHeaderText a{
-        color: white;
-        text-decoration: none;
-        font-size: 17px;
-    }
+.navbar-brand{
+    color: white;
+    padding-top: 3px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
 }
-
 /*----------------------INDEX-----------------------------*/
 /* Titulo "project one" */
 .imagenfondo2 h1 {
@@ -705,6 +633,9 @@ textarea{
 }
 
 @media  screen and (max-width:360px) {
+    .navHeader__navHeaderText{
+        display: none;
+    }
     header{
         width: 800px;
     }
@@ -713,13 +644,15 @@ textarea{
     }
     .navHeader{
         width: 800px;
-        height: 115px;
     }
     .copyright{
         width: 800px;
     }
 }
 @media  screen and (max-width:1024px) {
+    .navHeader__navHeaderText{
+        display: none;
+    }
     header{
         width: 1024px;
     }
@@ -728,7 +661,6 @@ textarea{
     }
     .navHeader{
         width: 1024px;
-        height: 100px;
     }
     .copyright{
         width: 1024px;
