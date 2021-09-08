@@ -591,6 +591,10 @@ textarea {
 @media screen and (max-width: 360px) {
   .navHeader__navHeaderText {
     display: none; }
+  html {
+    width: 800px; }
+  body {
+    width: 800px; }
   header {
     width: 800px; }
   main {
@@ -605,6 +609,10 @@ textarea {
 @media screen and (max-width: 1024px) {
   .navHeader__navHeaderText {
     display: none; }
+  html {
+    width: 800px; }
+  body {
+    width: 800px; }
   header {
     width: 1024px; }
   main {
