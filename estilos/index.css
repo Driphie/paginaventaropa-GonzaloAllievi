@@ -593,6 +593,8 @@ textarea {
     display: none; }
   header {
     width: 800px; }
+  main {
+    width: 800px; }
   .footer {
     width: 800px; }
   .navHeader {
@@ -604,6 +606,8 @@ textarea {
   .navHeader__navHeaderText {
     display: none; }
   header {
+    width: 1024px; }
+  main {
     width: 1024px; }
   .footer {
     width: 1024px; }
