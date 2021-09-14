@@ -370,8 +370,7 @@ body {
     background-color: #fff;
     border: 2px solid black; }
     .container .container__contact-box .container__contact-box__left {
-      height: 100%;
-      border: 2px solid black; }
+      height: 90%; }
     .container .container__contact-box .container__contact-box__right {
       padding: 25px 40px; }
     .container .container__contact-box .container__contact-box__right p {
@@ -489,7 +488,7 @@ textarea {
 /*------------------FOOTER----------------- */
 .footer {
   display: grid;
-  grid-template-areas: "nave pagos contacto redes";
+  grid-template-areas: "nave pagos contacto redes" "copy copy copy copy";
   justify-content: center;
   background-color: #000000;
   background-image: linear-gradient(315deg, #000000 0%, #414141 74%); }
@@ -578,8 +577,10 @@ textarea {
   padding-right: 20px; }
 
 .copyright {
+  grid-area: copy;
   background-color: black;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .copyright p {
   color: #a0a0a0;
@@ -610,13 +611,21 @@ textarea {
   .navHeader__navHeaderText {
     display: none; }
   html {
-    width: 1024px; }
+    width: 1024px;
+    height: 100%; }
   body {
-    width: 1024px; }
+    width: 1024px;
+    height: 100%; }
   header {
     width: 1024px; }
   main {
     width: 1024px; }
+  .main-content {
+    height: 100%; }
+  .copyright {
+    display: grid;
+    width: 1024px;
+    height: 100%; }
   .footer {
     width: 1024px; }
   .navHeader {
